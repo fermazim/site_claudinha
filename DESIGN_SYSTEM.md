@@ -294,7 +294,7 @@ Header/rodapé idênticos em cada HTML (estático funciona ao abrir). Versão Ji
 
 **Convenção de agendamento:** *toda* ação de marcar/agendar/“falar agora” aponta para **`https://wa.me/5521991249832`** (WhatsApp oficial · +55 21 99124-9832). Centralizado — quando mudar o número, busca-e-substitui um único valor. Vale para: botão “Agendar” da nav e do mobile, CTAs de corpo, “Falar no WhatsApp”, ícone do topbar e do rodapé.
 
-**Endereço oficial:** Av. das Américas, 3434 — Bloco 6, sala 205 · **Integral Health Institute** · Rio de Janeiro · RJ. Exibido na página de Contato (§13, bloco P) e no pin do mapa-placeholder.
+**Endereço oficial:** Av. das Américas, 3434 — Bloco 6, sala 205 · **Integral Health Institute** · Rio de Janeiro · RJ. Na página de Contato: logo do IHI (branca, `assets/img/logo/ihi-w.webp` — baixada, sem hotlink; link → ihi.integralhealth.rio em nova aba) à **esquerda** do endereço, e **mapa do Google embutido** (embed `output=embed`, sem chave de API) no `.map-ph`.
 
 ---
 
@@ -353,4 +353,17 @@ Material da cliente (2 CVs, deck Revanesse, fotos) processado em **03/06/2026**.
 Decisões aplicadas em **03/06/2026** (home):
 
 1. **Seção menta (`.sec.mint`)** — fundo verde menta (`--cb-mint` #C2CBA8) como "respiro" claro, com **texto petróleo** (#01232C; corpo/lead #2f4a46). Branco (ou menta-claro) sobre menta é ilegível — por isso o texto é **escuro**, contraste AA. Eyebrow herda `.on-light` (#3c5a55). Na home: pausa clara entre a banda do Botticelli e os depoimentos ("Rostos únicos merecem abordagens únicas").
-2. **Pattern de canto sangrado (`.pattern-corner`)** — grafismo (`pattern02`) ancorado a um canto e sangrando para fora (via `transform: translate`), clipado por `overflow:hidden` na seção. `mix-blend-mode:screen` revela só os **traços bege** (o campo petróleo do pattern desaparece), a ~`.5` de opacidade; `z-index:0`, atrás do `.wrap` (z-index 2). Variantes `.br` (canto inferior-direito) e `.tr` (superior-direito). Na home: canto inferior-direito da seção de pilares. Opacidade/posição são tunáveis.
+2. **Pattern de canto sangrado (`.pattern-corner`)** — grafismo (`pattern02`) ancorado a um canto e sangrando para fora (via `transform: translate`), clipado por `overflow:hidden` na seção. `mix-blend-mode:screen` revela só os **traços bege** (o campo petróleo do pattern desaparece), a ~`.5` de opacidade; `z-index:0`, atrás do `.wrap` (z-index 2). Variantes `.br` (canto inferior-direito) e `.tr` (superior-direito). **Removido da home** (o efeito sangrado não agradou em uso). O componente segue definido no CSS e disponível, mas **não está aplicado em nenhuma página** no momento.
+
+---
+
+## 22. Adendo v0.7 — Aposentadoria das fotos-placeholder & heros
+
+Decisões aplicadas em **03/06/2026**:
+
+1. **As fotos `claudia-01..20` eram placeholder** (modelo de banco de imagem, ≠ Dra. Claudia). **Retiradas de todas as páginas.** Em uso agora: as **3 fotos reais aprovadas** (`claudia-real-01..03`) nos pontos de rosto (heros, splits, 1–2 tiles de galeria) e **arte renascentista + patterns** nas galerias, cards e bandas. *(Substitui o que §10 dizia sobre o acervo; os arquivos `claudia-NN` seguem em disco, órfãos — podem ser apagados.)*
+2. **Heros por página:** Home = slider das 3 reais (real-01 ao final, `object-position` +20%). Dra. Claudia = real-03. Tratamentos = real-02 (rosto em evidência). Formações = **Davi sendo esculpido** (escultura). Blog = rosto dela (real-01). Contato = **Botticelli**. Resultados (off-nav) = real-01.
+3. **Contraste de hero:** `text-shadow` no eyebrow/h1/lead + overlay mais forte em `.hero.center` — texto legível sobre rosto ou arte.
+4. **Limite conhecido:** só existem 3 fotos reais; por isso elas se repetem entre páginas e as galerias se apoiam em arte/pattern (ligado à "lacuna assumida" do §10). Quando chegarem mais fotos reais (clínica/procedimento/turmas), plugar no lugar da arte/pattern.
+
+*v0.7 — atualizar a cada nova decisão de marca.*
