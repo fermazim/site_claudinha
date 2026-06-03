@@ -2,6 +2,9 @@
 # Pesado e privado — não versionar.
 fonts/
 
+# Documento-lei interno do projeto — não versionar.
+DESIGN_SYSTEM.md
+
 # Artefatos do Windows/WSL
 *:Zone.Identifier
 *.Zone.Identifier
