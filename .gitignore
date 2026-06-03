@@ -1,0 +1,11 @@
+# Fontes de trabalho (material bruto: CVs, decks, fotos originais, pesquisas)
+# Pesado e privado — não versionar.
+fonts/
+
+# Artefatos do Windows/WSL
+*:Zone.Identifier
+*.Zone.Identifier
+
+# Sistema
+.DS_Store
+Thumbs.db
